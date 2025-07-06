@@ -1,0 +1,4 @@
+* The landing page of the website could feature the 2D slot machine, with a button that says Choose Outfit beneath it. The 2D slot machine can be animated in the sense that it "performs a roll" every 6-10 seconds and has some sparks flying out (similar tos slot machine games) after each roll is conducted.
+* When the user selects the "Choose Outfit" button, they are given the opportunity to login or proceed without login. If they login, they can access their past closet/outfits. If they do not and there's no cached data for the user, they are taken to the closet screen first.
+
+I'm thinking a warm palatte? Think browns, salmons, etc.

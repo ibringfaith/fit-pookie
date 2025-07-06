@@ -1,5 +1,17 @@
+@font-face {
+    font-family: "pixel";
+    src: url("./assets/fonts/helvetipixel.ttf") format("truetype");
+}
+
+@theme {
+    --font-pixel: "pixel", sans-serif;
+}
+
+@layer base {
+    @apply font-pixel;
+}
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "pixel", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -65,4 +77,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} 
