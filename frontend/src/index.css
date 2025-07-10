@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
     font-family: "pixel";
     src: url("./assets/fonts/helvetipixel.ttf") format("truetype");
@@ -10,10 +12,13 @@
 @layer base {
     @apply font-pixel;
 }
+
 :root {
   font-family: "pixel", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+
+  text-align: 'center';
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -58,9 +63,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
