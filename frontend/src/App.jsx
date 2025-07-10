@@ -8,11 +8,22 @@ function App() {
 
   return (
     <>
-      <img class="scale-50" src={slotMachine} className="logo" alt="Slot Machine" />
-      <h1>Choose Your Outfit?</h1>
-      <div class = "flex justify-center">
-        <img class="scale-50" src={tempButton} alt="Start Button"/>
+      <div class="p-20">
+        <h1>CHOOSE YOUR OUTFIT?</h1>
+        {/* <img class="size-1/5 mx-auto object-contain" src={tempButton} alt="Start Button"/> */}
       </div>
+      <div class="grid grid-cols-2">  
+        <div class= "hover:underline"><h1>YES</h1></div>  
+        <div class= "hover:underline"><h1>NO</h1></div>  
+      </div>
+      <div class="p-4">
+        <img class="size-1/3 mx-auto object-contain" src={slotMachine} alt="Slot Machine" />
+      </div>
+      
+      
+      {/* <div class= "flex justify-center"> */}
+      {/* </div> */}
+      {/* </div> */}
     </>
   )
 }
