@@ -4,7 +4,6 @@ import triangleRight from './assets/triangle_right.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -14,14 +13,14 @@ function App() {
       <div class="flex -space-x-40 items-center">
         <div class = "flex justify-center items-center group">
           <img class="invisible group-hover:visible size-1/16" src={triangleRight}/>
-          <h1 class="px-5">YES</h1>
+          <button class="px-5">YES</button>
           {/* In case we want the underline effect again, delete 
               the line above and uncomment the one below
               <h1 class="hover:underline px-5">YES</h1> */}
         </div>
         <div class = "flex justify-center items-center group">
           <img class="invisible group-hover:visible size-1/16" src={triangleRight}/>
-          <h1 class="px-5">NO</h1>
+          <button class="px-5">NO</button>
         </div>
       </div>
       <div class="p-4">
