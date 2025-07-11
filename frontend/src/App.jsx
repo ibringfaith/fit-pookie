@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import slotMachine from './assets/slot_machine_full.png'
-import tempButton from './assets/temp_button_icon.png'
+import triangleRight from './assets/triangle_right.png'
 import './App.css'
 
 function App() {
@@ -11,19 +11,22 @@ function App() {
       <div class="p-7">
         <h1>CHOOSE YOUR OUTFIT?</h1>
       </div>
-      <div class="grid grid-cols-2 place-items-center">  
-        <div class="flex items-baseline">
-          <div class="triangle-right px-3"></div>
-          <h1 class="hover:underline">YES</h1>
+      <div class="flex -space-x-40 items-center">
+        <div class = "flex justify-center items-center group">
+          <img class="invisible group-hover:visible size-1/16" src={triangleRight}/>
+          <h1 class="px-5">YES</h1>
+          {/* In case we want the underline effect again, delete 
+              the line above and uncomment the one below
+              <h1 class="hover:underline px-5">YES</h1> */}
         </div>
-        <div class="flex items-baseline">
-          <div class="triangle-right px-3"></div>
-          <h1 class="hover:underline">NO</h1>
+        <div class = "flex justify-center items-center group">
+          <img class="invisible group-hover:visible size-1/16" src={triangleRight}/>
+          <h1 class="px-5">NO</h1>
         </div>
       </div>
       <div class="p-4">
         <img class="size-1/3 mx-auto object-contain" src={slotMachine} alt="Slot Machine" />
-      </div>
+      </div> 
     </>
   )
 }
