@@ -1,6 +1,6 @@
-// import {Link} from "react-router-dom"
-// <Link to="/Pokie"><button>X</button></Link> 
-export function Welcome() {
+import Link from "react-router-dom"
+
+export function WelcomeScreen() {
 
   return (
     <>
@@ -10,7 +10,9 @@ export function Welcome() {
       <p>Once you have uploaded images in each category,</p><br></br>
       <p>Generate an outfit using the slot machine</p><br></br>
       <p>If you want to save the fit to your gallery, click save</p>
-
+      <Link to="/StartScreen">
+        <button>X</button>
+      </Link> 
     </>
   )
 }
