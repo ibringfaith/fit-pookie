@@ -1,5 +1,5 @@
 import slotMachine from '../assets/slot_machine_full.png'
-import ArrowButton from '../components/ArrowButton.jsx'
+import RightArrowButton from '../components/RightArrowButton.jsx'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -14,8 +14,8 @@ function StartScreen() {
             {/* Whatever name you have here (in this case onClick) MUST match the
                 prop name you have as an arg to the ArrowButton function. Say I have
                 function ArrowButton({ onHit, message }) then here I have to say onHit={...}*/}
-          <ArrowButton text="YES" onClick={() => navigate('/WardrobeScreen')}/>
-          <ArrowButton text="NO" onClick={() => {console.log('You clicked me!');}}/>
+          <RightArrowButton arrowSize="size-1/16" padSize="px-5" isInvisible={true} text="YES" onClick={() => navigate('/WardrobeScreen')}/>
+          <RightArrowButton arrowSize="size-1/16" padSize="px-5" isInvisible={true} text="NO" onClick={() => {console.log('You clicked me!')}}/>
         </div>
         <div className="p-4">
           <img className="size-1/3 mx-auto object-contain" src={slotMachine} alt="Slot Machine" />
