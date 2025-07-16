@@ -12,7 +12,7 @@ function RightArrowButton ({ onClick, text, textSize, isInvisible, padSize, arro
     {
       classStr=arrowSize
     }
-    console.log({onClick})
+    
     return (
       <div className="content-center">
         <button className={classNameStr} onClick={onClick}>

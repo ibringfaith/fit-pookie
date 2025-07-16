@@ -1,20 +1,22 @@
 import triangleLeft from '../assets/triangle_left.png'
 
-function LeftArrowButton ({ onClick, text, isInvisible, padSize, arrowSize }) {
+function LeftArrowButton ({ onClick, text, textSize, isInvisible, padSize, arrowSize }) {
   let classStr = ""
+  let classNameStr = "flex mx-auto justify-center items-center group " + textSize
+
   if (isInvisible)
     {
-      classStr="invisible group-hover:visible " + arrowSize
+      classStr="invisible group-hover:visible " + arrowSize + " " + padSize
     }
   else
     {
       classStr=arrowSize
     }
-    console.log(classStr)
+    
     return (
-      <div className="flex justify-center items-center group">
-        <img className={classStr} src={triangleLeft}/>
-        <button className={padSize} onClick={onClick}>
+      <div className="content-center">
+        <button className={classNameStr} onClick={onClick}>
+          <img className={classStr} src={triangleLeft}/>
           {text}
         </button>
       </div>
