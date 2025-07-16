@@ -1,19 +1,22 @@
 import triangleRight from '../assets/triangle_right.png'
 
-function RightArrowButton ({ onClick, text, isInvisible, padSize, arrowSize }) {
+function RightArrowButton ({ onClick, text, textSize, isInvisible, padSize, arrowSize }) {
   let classStr = ""
+  let classNameStr = "flex mx-auto justify-center items-center group " + textSize
+
   if (isInvisible)
     {
-      classStr="invisible group-hover:visible " + arrowSize
+      classStr="invisible group-hover:visible " + arrowSize + " " + padSize
     }
   else
     {
       classStr=arrowSize
     }
+    console.log({onClick})
     return (
-      <div className="flex justify-center items-center group">
-        <img className={classStr} src={triangleRight}/>
-        <button className={padSize} onClick={onClick}>
+      <div className="content-center">
+        <button className={classNameStr} onClick={onClick}>
+          <img className={classStr} src={triangleRight}/>
           {text}
         </button>
       </div>
