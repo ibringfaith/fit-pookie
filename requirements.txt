@@ -1,0 +1,17 @@
+asgiref
+Django
+django-cors-headers
+djangorestframework
+djangorestframework-simplejwt
+PyJWT
+pytz
+sqLparse
+psycopg2-binary
+python-dotenv
+pillow
+numpy
+scikit-image
+git+https://github.com/sedthh/pyxelate.git
+scikit-learn
+numba
+matplotlib
