@@ -79,6 +79,14 @@ h6 {
   line-height: 1.1;
 }
 
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the dialog perfectly */
+  /* Add any other styling for your dialog, e.g., width, height, background */
+}
+
 button {
   /* font-size: 5em; */
   font-family: inherit;

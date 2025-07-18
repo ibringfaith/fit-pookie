@@ -8,8 +8,8 @@ import PageTwo from './components/PageTwo.jsx'
 function App() {
   return (
       <Routes>
-        <Route path = "/" element={<WelcomeScreen />}/>
-        <Route path = "/StartScreen" element={<StartScreen />}/>
+        <Route path = "/WelcomeScreen" element={<WelcomeScreen />}/>
+        <Route path = "/" element={<StartScreen />}/>
         <Route path = "/WardrobeScreen" element={<WardrobeScreen />}/>
         <Route path = "/PageTwo" element={<PageTwo />}/>
       </Routes>

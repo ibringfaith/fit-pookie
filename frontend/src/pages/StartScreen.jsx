@@ -1,5 +1,6 @@
 import slotMachine from '../assets/slot_machine_full.png'
 import RightArrowButton from '../components/RightArrowButton.jsx'
+import {PageOne} from '../components/PageOne.jsx'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -7,6 +8,7 @@ function StartScreen() {
     const navigate=useNavigate()
     return (
       <>
+        <PageOne />
         <div className="p-7">
           <h1>CHOOSE YOUR OUTFIT?</h1>
         </div>

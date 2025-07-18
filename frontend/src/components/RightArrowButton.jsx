@@ -1,6 +1,7 @@
 import triangleRight from '../assets/triangle_right.png'
 
 function RightArrowButton ({ onClick, text, textSize, isInvisible, padSize, arrowSize }) {
+    /* To-do: change arrowSize to iconSize. Make sure to change */
   let classStr = ""
   let classNameStr = "flex mx-auto justify-center items-center group " + textSize
 
@@ -10,7 +11,7 @@ function RightArrowButton ({ onClick, text, textSize, isInvisible, padSize, arro
     }
   else
     {
-      classStr=arrowSize
+      classStr=arrowSize + " " + padSize
     }
     
     return (
