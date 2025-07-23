@@ -14,36 +14,25 @@ export function PageOne()
   
   return(
     <>
-      {/* <div className = "flex justify-center items-center"> */}
-        <dialog ref={dialogRef}>
-          <div className="grid-rows-3 content-evenly content-center size-[500px] bg-no-repeat bg-contain bg-[url('/text_box.png')]">
-            <div>
-              <h3 className="py-2">Welcome!</h3>
-            </div>
-            <div>
-              <p className="text-balance text-wrap">
-              This is fit pookie, a web app  <br></br>
-              where you pull the slot  <br></br>
-              machine to pick an outfit. <br></br><br></br>
-              Before we make our first pull, let's<br></br>
-              start by clicking the yes button below. <br></br>
-              This will take us to the closet where <br></br>
-              we can add our first outfit pieces!
-              </p>
-            </div>
-            {/* To make your first pull, you need to add outfit
-            pieces to your wardrobe. You can do this by clicking
-            the hanger icon, then 
-            If you select to choose a fit, upload <br></br> 
-            images of your clothes to the closet. <br></br>
-            Once you have uploaded images, you <br></br>
-            can generate an outfit using the slot <br></br>
-            machine. If you want to save the fit <br></br>
-            to your gallery, click the save icon. 
-            */}
-            <PopupArrowButton isInvisible={true} text = "OK" textSize = "text-[1.75em]" isRight = {true} iconSize= "w-1/28 h-1/4" onClick={() => dialogRef.current.close()}/>          
+      {/* <dialog className="overflow-hidden shadow-[0px_0px_100px_35px_rgba(153,109,6,0.65)] bg-blend-multiply" ref={dialogRef}> */}
+      <dialog className="overflow-hidden transition-opacity duration-10000 ease-out" ref={dialogRef}>
+        <div className="grid-rows-3 content-evenly content-center w-[452px] h-[448px] bg-no-repeat bg-contain bg-[url('/text_box.png')]">
+          <div className="pt-6 pb-4">
+            <h5>Welcome!</h5>
           </div>
-        </dialog>
+          <div className="pb-4">
+            <p className="text-balance text-wrap">
+            This is fit pookie, a web app where  <br></br>
+            you pull the slot machine to pick an <br></br>
+            outfit. Before we make our first pull, <br></br>
+            let's start by clicking the yes button <br></br>
+            below. This will take us to the closet <br></br>
+            so we can add our first outfit pieces! <br></br>
+            </p>
+          </div>
+          <PopupArrowButton isInvisible={true} text = "OK" textSize = "text-[1.75em]" isRight = {true} iconSize= "w-1/28 h-1/4" onClick={() => dialogRef.current.close()}/>          
+        </div>
+      </dialog>
     </>
   )
 }

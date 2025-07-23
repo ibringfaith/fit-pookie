@@ -5,15 +5,15 @@ export function PopupArrowButton({ isInvisible, onClick, text, textSize, isRight
 {
   let icon = null
   let classStr = ""
-  let classNameStr = "absolute left-[225px] " + textSize 
+  let classNameStr = "absolute left-[207px] " + textSize 
 
   if (isInvisible)
     {
-      classStr="absolute left-[197px] bottom-[36px] invisible group-hover:visible " + iconSize 
+      classStr="absolute left-[180px] bottom-[36px] invisible group-hover:visible " + iconSize 
     }
   else
     {
-      classStr= "absolute left-[197px] bottom-[36px] " + iconSize
+      classStr= "absolute left-[180px] bottom-[36px] " + iconSize
     }
 
     if (isRight)

@@ -87,6 +87,10 @@ dialog {
   /* Add any other styling for your dialog, e.g., width, height, background */
 }
 
+dialog::backdrop {
+  backdrop-filter: blur(10px)
+}
+
 button {
   /* font-size: 5em; */
   font-family: inherit;
