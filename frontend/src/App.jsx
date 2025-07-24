@@ -2,7 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import StartScreen from './pages/StartScreen.jsx'
 import WelcomeScreen from './components/WelcomeScreen.jsx'
-import WardrobeScreen from './pages/WardrobeScreen.jsx'
+import { WardrobeScreen } from './pages/WardrobeScreen.jsx'
 import PageTwo from './components/PageTwo.jsx'
 
 function App() {
