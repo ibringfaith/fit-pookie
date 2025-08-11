@@ -5,6 +5,8 @@ import WelcomeScreen from './components/WelcomeScreen.jsx'
 import { WardrobeScreen } from './pages/WardrobeScreen.jsx'
 import { RollScreen } from './pages/RollScreen.jsx'
 import PageTwo from './components/PageTwo.jsx'
+import { AddOutfitScreenOne } from './pages/AddOutfitScreenOne.jsx';
+import { AddOutfitScreenTwo } from './pages/AddOutfitScreenTwo.jsx';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path = "/WardrobeScreen" element={<WardrobeScreen />}/>
         <Route path = "/PageTwo" element={<PageTwo />}/>
         <Route path = "/RollScreen" element={<RollScreen />}/>
+        <Route path = "/AddOutfitScreenOne" element={<AddOutfitScreenOne />}/>
+        <Route path = "/AddOutfitScreenTwo" element={<AddOutfitScreenTwo />}/>''
       </Routes>
   )
 }

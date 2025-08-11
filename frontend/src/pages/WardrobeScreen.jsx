@@ -20,7 +20,7 @@ export function WardrobeScreen() {
           <img className="h-[165px] w-[150px]" src={outfitBorder} alt="Outfit Border"/>
           <img className="h-[165px] w-[150px]" src={outfitBorder} alt="Outfit Border"/>    
           <div className="h-[48px] w-[48px] col-span-3">
-            <AddButton onClick = {() => navigate('/RollScreen')}/>
+            <AddButton onClick = {() => navigate('/AddOutfitScreenOne')}/>
           </div>
         </div>
       </div>
